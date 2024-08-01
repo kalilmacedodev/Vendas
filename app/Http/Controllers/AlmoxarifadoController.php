@@ -30,18 +30,18 @@ class AlmoxarifadoController extends Controller
 
     public function produto_store(Request $request){
 
-        $imagem = null;
-
-        if($request->imagem){
-            $imagem = "data:image/{$request->file('imagem')->getClientOriginalExtension()};base64,".base64_encode(file_get_contents($request->file('imagem')));
-        }
-
-        Produto::create([
+        $produto = Produto::create([
             'nome' => $request->nome,
             'nome_unidade' => $request->nome_unidade,
             'preco' => $request->preco,
-            'base64_imagem' => $imagem,
         ]);
+
+        if($request->imagem){
+            $imagem = "data:image/{$request->file('imagem')->getClientOriginalExtension()};base64,".base64_encode(file_get_contents($request->file('imagem')));
+            $produto->update([
+                'base64_imagem' => $imagem
+            ]);
+        }
 
         Alert::success('Parabéns', 'Produto cadastrado com sucesso!');
 
@@ -59,14 +59,18 @@ class AlmoxarifadoController extends Controller
 
         $produto = Produto::findOrFail($produto_id);
 
-        $imagem = "data:image/{$request->file('imagem')->getClientOriginalExtension()};base64,".base64_encode(file_get_contents($request->file('imagem')));
-
         $produto->update([
             'nome' => $request->nome,
             'nome_unidade' => $request->nome_unidade,
             'preco' => $request->preco,
-            'base64_imagem' => $imagem,
         ]);
+
+        if($request->imagem){
+            $imagem = "data:image/{$request->file('imagem')->getClientOriginalExtension()};base64,".base64_encode(file_get_contents($request->file('imagem')));
+            $produto->update([
+                'base64_imagem' => $imagem
+            ]);
+        }
 
         Alert::success('Parabéns', 'Produto atualizado com sucesso!');
 

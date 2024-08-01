@@ -69,7 +69,7 @@
                                         'modal_id' => "modalExclusao{$venda->venda_id}",
                                         'form_action' => route('financeiro.venda.destroy', $venda->venda_id),
                                         'modal_body' => "Você tem certeza de quer excluir regstro de venda número {$venda->venda_id}
-                                                    com valor de R$". $venda->preco. " para {$venda->cliente->nome}?
+                                                    com valor de R$". $venda->preco."?
                                                     Esta ação apagará tanto o registro de venda quanto os registros de almoxarifado executados
                                                     no cadastro desta venda."])
 
