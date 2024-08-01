@@ -29,9 +29,6 @@
                             <input required type="number"  step=".01" name="preco" maxlength='255' class="form-control" placeholder="Valor da venda">
                         </div>
                         <div class="card-body">
-                            <h3 id="texto-valor" class="">Valor recomendado: nenhum R$</h3>
-                        </div>
-                        <div class="card-body">
                             <input required type="date" name="data" maxlength='255' class="form-control" placeholder="Data" value="{{date('Y-m-d')}}">
                         </div>
                         <div class="card-body">
@@ -46,14 +43,14 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="row">
-                            <h5 class="col-7 card-title mb-0">Saída de Produtos</h5>
+                            <h5 class="col-8 card-title mb-0">Saída de Produtos</h5>
                             <div class="col-2 text-right">
                                 <a href="#" onclick="deleteFunction()" class="btn btn-sm btn-primary">
                                     {{-- <i class="align-middle me-1" data-feather="trash"></i> --}}
                                     Apagar
                                 </a>
                             </div>
-                            <div class="col-2">
+                            <div class="col-2 text-right">
                                 <a href="#" onclick="addFunction()" class="btn btn-sm btn-primary">
                                     {{-- <i class="align-middle me-1" data-feather="plus"></i> --}}
                                     Adicionar
@@ -70,17 +67,17 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <select id="produto" required form="form" class="form-control" name="produto_id[]">
+                            <select required form="form" class="form-control" name="produto_id[]">
                                 <option value="" selected>Selecione o produto</option>
                                 @foreach ($produtos as $produto)
-                                <option id="{{$produto->preco}}" value="{{ $produto->produto_id }}">
+                                <option value="{{ $produto->produto_id }}">
                                     {{ $produto->nome }}
                                 </option>
                                 @endforeach
                             </select>
                         </div>
                         <div class="card-body">
-                            <input id="quantidade" onkeyup="mudarTexto()" required form="form" type="number"  step=".01" name="quantidade[]" maxlength='255' class="form-control" placeholder="Quantidade">
+                            <input required form="form" type="number"  step=".01" name="quantidade[]" maxlength='255' class="form-control" placeholder="Quantidade">
                         </div>
                     </div>
 
@@ -107,32 +104,6 @@
         element.after(new_element);
         $(new_element).prop('id', 'opcional');
     }
-
-    function mudarTexto() {
-
-        let texto_valor = document.querySelector("#texto-valor");
-
-        let selects = document.querySelectorAll('#produto');
-        let quantidades = document.querySelectorAll('#quantidade');
-
-        let total = 0;
-
-        let maximo = selects.length;
-
-        for (let i = 0 ; i < maximo; i++) {
-
-            let options = selects[i].options;
-
-            let valor = options[options.selectedIndex].id;
-            let numero = quantidades[i].value;
-
-            total = total + (valor * numero);
-        };
-
-        texto_valor.textContent = "Valor recomendado: R$" + total;
-
-    }
-
 </script>
 
 @endsection

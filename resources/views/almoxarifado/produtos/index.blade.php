@@ -47,9 +47,8 @@
                                             </td>
                                             <td class="table-action">
                                                 <a href="{{route('almoxarifado.produto.edit', $produto->produto_id)}}">
-                                                    {{-- <i
-                                                        class="align-middle me-1" data-feather="edit"></i> --}}
-                                                        Editar
+                                                    <i
+                                                        class="align-middle me-1" data-feather="edit"></i>
                                                     </a>
 
                                                 {{-- <a href="#"><i

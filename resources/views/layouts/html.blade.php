@@ -64,6 +64,7 @@
     </script> -->
 
 	<script src="{{ asset('js/app.js') }}"></script>
+    @include('js.app');
 
     <!-- MULTIPLE SELECT SCRIPTS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
@@ -90,6 +91,7 @@
         $('.datepicker').datepicker();
     </script>
 
+
     {{-- Feather Icons --}}
     <script>
         feather.replace()
@@ -99,6 +101,58 @@
 
 
 <script src="{{ asset('js/adminkit.js')}}"></script>
+
+<style>
+    body
+* {
+    font-size: 100%;
+}
+
+.alert {
+    border-radius: 25px;
+    padding: 20px;
+    background-color: red;
+    color: aliceblue;
+    width: 15%;
+    font-size: 15px;
+    position: fixed;
+    top: 12%;
+    right: 5%;
+    z-index: var(--z-fixed);
+    box-shadow: 0 1px 20px rgba(146, 161, 176, 0.15);
+    animation: fadeInAnimation ease 3s;
+  }
+
+  .closebtn
+  {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .closebtn:hover
+  {
+    color: rgb(0, 0, 0);
+  }
+
+
+  @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+</style>
 
 
 </html>

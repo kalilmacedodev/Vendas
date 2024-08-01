@@ -11,10 +11,9 @@
 		<ul class="navbar-nav navbar-align">
 			<div class="dropleft">
 				<a class="text-white" style="text-decoration: none;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					{{-- <i class="align-middle me-1 text-light" data-feather="user"></i> --}}
+					<i class="align-middle me-1 text-light" data-feather="user"></i>
 						{{auth()->user()->nome}}
-                        ↓
-					{{-- <i class="align-middle me-1 text-light" data-feather="chevron-down"></i> --}}
+					<i class="align-middle me-1 text-light" data-feather="chevron-down"></i>
 				</a>
 				<li class="nav-item dropdown">
 					<div class="dropdown-menu">

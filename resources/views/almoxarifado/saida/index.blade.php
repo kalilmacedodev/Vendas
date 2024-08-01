@@ -62,14 +62,12 @@
                                             </td>
                                             <td class="table-action">
                                                 <a href="{{route('almoxarifado.saida.edit', $saida->saida_produtos_id)}}">
-                                                    {{-- <i
-                                                        class="align-middle me-1" data-feather="edit"></i> --}}
-                                                        Editar
+                                                    <i
+                                                        class="align-middle me-1" data-feather="edit"></i>
                                                     </a>
 
                                                 <a href="#" data-toggle="modal" data-target="#modalExclusao{{$saida->saida_produtos_id}}">
-                                                    {{-- <i class="align-middle me-1" data-feather="trash"></i> --}}
-                                                    Apagar
+                                                    <i class="align-middle me-1" data-feather="trash"></i>
                                                 </a>
 
                                             </td>

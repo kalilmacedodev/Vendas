@@ -69,12 +69,10 @@
 
                                             <td class="table-action">
                                                 <a href="{{ route('seguranca.user.edit', $usuario->user_id) }}" title="Editar conta">
-                                                    {{-- <i class="align-middle me-1" data-feather="edit"></i> --}}
-                                                    Editar
+                                                    <i class="align-middle me-1" data-feather="edit"></i>
                                                 </a>
                                                 <a href="{{ route('seguranca.user.senha_edit', $usuario->user_id) }}" title="Mudar senha">
-                                                    {{-- <i class="align-middle me-1" data-feather="key"></i> --}}
-                                                    Mudar Senha
+                                                    <i class="align-middle me-1" data-feather="key"></i>
                                                 </a>
                                                 {{-- <a href="{{ route('seguranca.user.destroy', $usuario->user_id) }}" title="Apagar">
                                                     <i class="align-middle me-1" data-feather="trash"></i>

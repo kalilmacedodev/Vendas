@@ -53,13 +53,11 @@
                                             </td>
                                             <td class="table-action">
                                                 <a href="{{route('almoxarifado.entrada.edit', $entrada->entrada_produtos_id)}}">
-                                                    {{-- <i class="align-middle me-1" data-feather="edit"></i> --}}
-                                                    Editar
+                                                    <i class="align-middle me-1" data-feather="edit"></i>
                                                 </a>
 
                                                 <a href="#" data-toggle="modal" data-target="#modalExclusao{{$entrada->entrada_produtos_id}}">
-                                                    {{-- <i class="align-middle me-1" data-feather="trash"></i> --}}
-                                                    Apagar
+                                                    <i class="align-middle me-1" data-feather="trash"></i>
                                                 </a>
 
                                                 @include('layouts.components.modal_confirmacao', [

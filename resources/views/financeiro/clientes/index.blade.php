@@ -53,9 +53,8 @@
                                             </td>
                                             <td class="table-action">
                                                 <a href="{{route('financeiro.cliente.edit', $cliente->cliente_id)}}">
-                                                    {{-- <i
-                                                        class="align-middle me-1" data-feather="edit"></i> --}}
-                                                        Editar
+                                                    <i
+                                                        class="align-middle me-1" data-feather="edit"></i>
                                                     </a>
 
                                                 {{-- <a href="#" data-toggle="modal" data-target="#modalExclusao{{$cliente->cliente_id}}"><i class="align-middle me-1" data-feather="trash"></i></a>
