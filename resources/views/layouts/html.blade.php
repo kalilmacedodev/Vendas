@@ -64,8 +64,6 @@
     </script> -->
 
 	<script src="{{ asset('js/app.js') }}"></script>
-    @include('js.app');
-
     <!-- MULTIPLE SELECT SCRIPTS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
@@ -90,7 +88,6 @@
     <script>
         $('.datepicker').datepicker();
     </script>
-
 
     {{-- Feather Icons --}}
     <script>
