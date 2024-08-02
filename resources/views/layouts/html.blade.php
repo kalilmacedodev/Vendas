@@ -140,21 +140,6 @@
     /* font-weight: 600; */
 }
 
-/* .width {
-    background-color:var(--first-color);
-}
-
-.sidebar-item a {
-    color: white;
-}
-
-.navbar {
-    background-color: var(--second-color);
-}
-
-.navbar a {
-    color: black;
-} */
 
 .alert {
     border-radius: 25px;

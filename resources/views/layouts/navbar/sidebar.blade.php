@@ -13,7 +13,7 @@
                     {{-- <div> --}}
                 <hr>
                 <li class="sidebar-item">
-                    <a class="sidebar-link" href="{{route('home')}}">
+                    <a class="sidebar-link" style="text-decoration: none;" href="{{route('home')}}">
                         <i class="align-middle" data-feather="chevron-right"></i>
                         <span class="align-middle">HOME</span>
                     </a>
@@ -21,7 +21,7 @@
                 <hr>
 
                 <li class="mb-2 sidebar-item">
-                    <a class="sidebar-link" data-toggle="collapse" href="#collapseAlmoxarifado" role="button" aria-expanded="false" aria-controls="collapseAlmoxarifado">
+                    <a class="sidebar-link" style="text-decoration: none;" data-toggle="collapse" href="#collapseAlmoxarifado" role="button" aria-expanded="false" aria-controls="collapseAlmoxarifado">
                         {{-- <i class="align-middle" data-feather="chevron-right"></i> <span class="@if(request()->routeIs('almoxarifado.*') == true){{'text-secondary'}}@endif align-middle">ALMOXARIFADO</span> --}}
                         <i class="align-middle" data-feather="chevron-right"></i> <span class="align-middle">ALMOXARIFADO</span>
                     </a>
@@ -52,7 +52,7 @@
                 <hr>
 
                 <li class="mb-2 sidebar-item">
-                    <a class="sidebar-link" data-toggle="collapse" href="#collapseFinanceiro" role="button" aria-expanded="false" aria-controls="collapseFinanceiro">
+                    <a class="sidebar-link" style="text-decoration: none;" data-toggle="collapse" href="#collapseFinanceiro" role="button" aria-expanded="false" aria-controls="collapseFinanceiro">
                         <i class="align-middle" data-feather="chevron-right"></i> <span class="align-middle">FINANCEIRO</span>
                     </a>
                     <ul class="mt-3 collapse nav flex-column" id="collapseFinanceiro" style="overflow: hidden">
@@ -80,7 +80,7 @@
                 <hr>
 
                 <li class="mb-2 sidebar-item">
-                    <a class="sidebar-link" data-toggle="collapse" href="#collapseSeguranca" role="button" aria-expanded="false" aria-controls="collapseSeguranca">
+                    <a class="sidebar-link" style="text-decoration: none;" data-toggle="collapse" href="#collapseSeguranca" role="button" aria-expanded="false" aria-controls="collapseSeguranca">
                         <i class="align-middle" data-feather="chevron-right"></i> <span class="align-middle">SEGURANÇA</span>
                     </a>
                     <ul class="mt-3 collapse nav flex-column" id="collapseSeguranca" style="overflow: hidden">
