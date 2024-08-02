@@ -25,7 +25,7 @@
                         {{-- <i class="align-middle" data-feather="chevron-right"></i> <span class="@if(request()->routeIs('almoxarifado.*') == true){{'text-secondary'}}@endif align-middle">ALMOXARIFADO</span> --}}
                         <i class="align-middle" data-feather="chevron-right"></i> <span class="align-middle">ALMOXARIFADO</span>
                     </a>
-                    <ul class="mt-3 collapse nav flex-column ms-1" id="collapseAlmoxarifado" style="overflow: hidden">
+                    <ul class="mt-3 collapse nav flex-column" id="collapseAlmoxarifado" style="overflow: hidden">
                         <li class="w-100">
                             <a href="{{route('almoxarifado.produto.index')}}" class="mb-1 btn btn-primary w-75">
                                 <i class="align-middle w-25" data-feather="package"></i>
@@ -55,7 +55,7 @@
                     <a class="sidebar-link" data-toggle="collapse" href="#collapseFinanceiro" role="button" aria-expanded="false" aria-controls="collapseFinanceiro">
                         <i class="align-middle" data-feather="chevron-right"></i> <span class="align-middle">FINANCEIRO</span>
                     </a>
-                    <ul class="mt-3 collapse nav flex-column ms-1" id="collapseFinanceiro" style="overflow: hidden">
+                    <ul class="mt-3 collapse nav flex-column" id="collapseFinanceiro" style="overflow: hidden">
                         <li class="w-100">
                             <a href="{{route('financeiro.venda.index')}}" class="mb-1 btn btn-primary w-75">
                                 <i class="align-middle w-25" data-feather="dollar-sign"></i>
@@ -83,7 +83,7 @@
                     <a class="sidebar-link" data-toggle="collapse" href="#collapseSeguranca" role="button" aria-expanded="false" aria-controls="collapseSeguranca">
                         <i class="align-middle" data-feather="chevron-right"></i> <span class="align-middle">SEGURANÇA</span>
                     </a>
-                    <ul class="mt-3 collapse nav flex-column ms-1" id="collapseSeguranca" style="overflow: hidden">
+                    <ul class="mt-3 collapse nav flex-column" id="collapseSeguranca" style="overflow: hidden">
                         <li class="w-100">
                             <a href="{{route('seguranca.user.index')}}" class="mb-1 btn btn-primary w-75">
                                 <i class="align-middle w-25" data-feather="users"></i>

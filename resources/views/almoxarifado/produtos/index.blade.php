@@ -37,7 +37,7 @@
                                 <tbody>
                                     @forelse($produtos as $produto)
                                         <tr>
-                                            <td style="width: 20%"><img  style="width: 20vh" src="{{$produto->base64_imagem}}"></td>
+                                            <td><img style="width: 8rem" src="{{$produto->base64_imagem}}"></td>
                                             <td>{{$produto->nome}}</td>
                                             <td>{{$produto->nome_unidade}}</td>
                                             <td>{{$produto->preco}}</td>

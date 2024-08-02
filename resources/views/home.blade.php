@@ -65,6 +65,7 @@
                         <table class="table align-items-center table-flush">
                             <thead class="thead-light">
                                 <tr>
+                                    <th scope="col"></th>
                                     <th scope="col">Produto</th>
                                     <th scope="col">Estoque Atual</th>
                                     <th scope="col">Unidades Vendidas no Mês</th>
@@ -73,6 +74,7 @@
                             <tbody>
                                 @forelse($produtos as $produto)
                                     <tr>
+                                        <td><img style="width: 6rem" src="{{$produto->base64_imagem}}"></td>
                                         <td>{{$produto->nome}}</td>
                                         <td>{{$produto->em_estoque()}}</td>
                                         <td><strong>{{$produto->unidades_vendidas_no_mes()}} {{$produto->nome_unidade}}s</strong></td>
