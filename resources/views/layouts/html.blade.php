@@ -100,10 +100,61 @@
 <script src="{{ asset('js/adminkit.js')}}"></script>
 
 <style>
+    :root {
+  --header-height: 3rem;
+  --font-semi: 600;
+  /*===== Colores =====*/
+  /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
+  /* HSL color mode */
+  --hue-color: 224;
+  --first-color: #1B1B1B;
+  --second-color: #C4C5BA;
+  --third-color: #E4E4DE;
+  /*===== Fuente y tipografia =====*/
+  --body-font: "Poppins", sans-serif;
+  --big-font-size: 2rem;
+  --h2-font-size: 1.25rem;
+  --normal-font-size: .938rem;
+  --smaller-font-size: .75rem;
+  /*===== Margenes =====*/
+  --mb-2: 1rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+  /*===== z index =====*/
+  --z-back: -10;
+  --z-fixed: 100;
+}
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.5rem;
+    --h2-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --smaller-font-size: .875rem;
+  }
+}
     body
 * {
     font-size: 100%;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 600; */
 }
+
+/* .width {
+    background-color:var(--first-color);
+}
+
+.sidebar-item a {
+    color: white;
+}
+
+.navbar {
+    background-color: var(--second-color);
+}
+
+.navbar a {
+    color: black;
+} */
 
 .alert {
     border-radius: 25px;
