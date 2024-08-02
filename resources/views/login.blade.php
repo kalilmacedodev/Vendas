@@ -22,8 +22,8 @@
                                 <div class="input-group flex-nowrap">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="addon-wrapping">
-                                            {{-- <i data-feather="user"></i> --}}
-                                            E-mail
+                                            <i data-feather="user"></i>
+                                            {{-- E-mail --}}
                                         </span>
                                     </div>
                                     <input id="email" placeholder="E-mail" class="form-control @error('email') is-invalid @enderror" type="email" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus />
@@ -40,8 +40,8 @@
                                 <div class="input-group flex-nowrap">
                                     <div class="input-group-prepend">
                                         <span class="input-group-text" id="addon-wrapping">
-                                            {{-- <i data-feather="lock"></i> --}}
-                                            Senha
+                                            <i data-feather="lock"></i>
+                                            {{-- Senha --}}
                                         </span>
                                     </div>
                                     <input id="password" class="form-control @error('password') is-invalid @enderror" type="password" name="password" placeholder="Digite a sua senha" required autocomplete="current-password" />
